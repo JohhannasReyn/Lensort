@@ -1,4 +1,12 @@
 [
+    // Suggested Key Bindings for Lensort
+    // Uncomment to use these bindings.
+
+    // Sort lines by length
+    /*/// <-- put a 2nd '*' next to the '*' to uncomment the segment below
     { "keys": ["super+f10"], "command": "sort_lines_by_length" },
+    
+    // Sort lines by length in reverse order
     { "keys": ["super+shift+f10"], "command": "sort_lines_by_length", "args": {"reverse": true} }
+    //*/
 ]
