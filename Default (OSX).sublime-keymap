@@ -1,0 +1,4 @@
+[
+    { "keys": ["super+f10"], "command": "sort_lines_by_length" },
+    { "keys": ["super+shift+f10"], "command": "sort_lines_by_length", "args": {"reverse": true} }
+]
