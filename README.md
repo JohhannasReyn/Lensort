@@ -49,7 +49,7 @@ You can use the following key bindings by uncommenting them in the provided keym
 Save the file, and your custom key bindings will be active.
 
 If you wish to do so, and have done what is described above, then...
-### Keyboard Shortcuts >>>-----^^^--^^^--^--^^^-------^^^
+**Keyboard Shortcuts** >>>-----^^^--^^^--^--^^^-------^^^
 
 - **Sort Lines by Length:** `Ctrl+F10`
 - **Sort Lines by Length (Reverse):** `Ctrl+Shift+F10`
