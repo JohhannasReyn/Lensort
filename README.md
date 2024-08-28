@@ -36,14 +36,26 @@ Lensort doesn't include default key bindings to avoid conflicts with other plugi
 ### Suggested Key Bindings
 
 You can use the following key bindings by uncommenting them in the provided keymap files (`Default (Windows).sublime-keymap`, `Default (Linux).sublime-keymap`, `Default (OSX).sublime-keymap`):
+They are in the zipped directory 'Lensort.sublime-package', extract the file for your OS and save it to the `..\Packages\User` directory that is in the `Sublime Text` directory that plugins are installed.
 
+Just in case you get lost, here's a map:
+
+../Sublime Text/Installed Packages/Lensort.sublime-package <-- where this plugin is installed, (i.e. you are here)
+  |-other stuff
+  |-Packages/User/Default (Your OS).sublime-keymap <-- where the keybinding file gets saved =)
+  
 ```json
 [
+    // Suggested Key Bindings for Lensort
+    // Uncomment to use these bindings by adding an astrick '*' where indicated below.
+
     // Sort lines by length
+    /*/// <-- put a 2nd '*' next to the '*' to uncomment the segment below
     { "keys": ["ctrl+f10"], "command": "sort_lines_by_length" },
 
     // Sort lines by length in reverse order
     { "keys": ["ctrl+shift+f10"], "command": "sort_lines_by_length", "args": {"reverse": true} }
+    //*/
 ]
 ```
 Save the file, and your custom key bindings will be active.
