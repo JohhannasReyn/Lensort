@@ -1,5 +1,13 @@
 [
     {
+        "caption": "Preferences: Lensort Settings",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/Lensort/Lensort.sublime-settings",
+            "user_file": "${packages}/User/Lensort.sublime-settings"
+        }
+    },
+    {
         "caption": "Sort Lines by Length",
         "command": "sort_lines_by_length"
     },
