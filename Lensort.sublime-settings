@@ -1,0 +1,5 @@
+{
+    "preserve_preceding_whitespace": "move_with_line",  // Options: "no", "leave_in_place", "move_with_line"
+
+    "whitespace_counted_in_sort": true // Options: true, false **NOTE: only works with "move_with_line"**
+}

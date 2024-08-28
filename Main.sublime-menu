@@ -1,0 +1,48 @@
+[
+    {
+        "caption": "Edit",
+        "mnemonic": "E",
+        "id": "edit",
+        "children":
+        [
+            {
+                "caption": "Sort Lines by Length",
+                "command": "sort_lines_by_length"
+            },
+            {
+                "caption": "Sort Lines by Length (Reverse)",
+                "command": "sort_lines_by_length",
+                "args": {"reverse": true}
+            }
+        ]
+    },
+    {
+        "caption": "Preferences",
+        "mnemonic": "P",
+        "id": "preferences",
+        "children": [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "k",
+                "id": "package-settings",
+                "children": [
+                    {
+                        "caption": "Lensort",
+                        "children": [
+                            {
+                                "caption": "Settings - Default",
+                                "command": "open_file",
+                                "args": {"file": "${packages}/Lensort/Lensort.sublime-settings"}
+                            },
+                            {
+                                "caption": "Settings - User",
+                                "command": "open_file",
+                                "args": {"file": "${packages}/User/Lensort.sublime-settings"}
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
