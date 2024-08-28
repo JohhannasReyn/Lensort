@@ -29,16 +29,36 @@
    
 ## Usage
 
+## Key Bindings
+
+Lensort doesn't include default key bindings to avoid conflicts with other plugins. However, you can easily set up custom key bindings if you'd like to quickly sort lines by length.
+
+### Suggested Key Bindings
+
+You can use the following key bindings by uncommenting them in the provided keymap files (`Default (Windows).sublime-keymap`, `Default (Linux).sublime-keymap`, `Default (OSX).sublime-keymap`):
+
+```json
+[
+    // Sort lines by length
+    { "keys": ["ctrl+f10"], "command": "sort_lines_by_length" },
+
+    // Sort lines by length in reverse order
+    { "keys": ["ctrl+shift+f10"], "command": "sort_lines_by_length", "args": {"reverse": true} }
+]
+```
+Save the file, and your custom key bindings will be active.
+
+If you wish to do so, and have done what is described above, then...
+### Keyboard Shortcuts >>>-----^^^--^^^--^--^^^-------^^^
+
+- **Sort Lines by Length:** `Ctrl+F10`
+- **Sort Lines by Length (Reverse):** `Ctrl+Shift+F10`
+
 ### Menu
 
 You can access the plugin via the `Edit` menu:
 - `Edit` -> `Sort by Length`
 - `Edit` -> `Sort by Length (Reverse)`
-
-### Keyboard Shortcuts
-
-- **Sort Lines by Length:** `Ctrl+F10`
-- **Sort Lines by Length (Reverse):** `Ctrl+Shift+F10`
 
 ### Settings
 
