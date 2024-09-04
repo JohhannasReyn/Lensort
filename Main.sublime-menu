@@ -30,14 +30,20 @@
                         "caption": "Lensort",
                         "children": [
                             {
-                                "caption": "Settings - Default",
-                                "command": "open_file",
-                                "args": {"file": "${packages}/Lensort/Lensort.sublime-settings"}
+                                "caption": "Settings",
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/Lensort/Lensort.sublime-settings",
+                                    "user_file": "${packages}/User/Lensort.sublime-settings"
+                                }
                             },
                             {
-                                "caption": "Settings - User",
-                                "command": "open_file",
-                                "args": {"file": "${packages}/User/Lensort.sublime-settings"}
+                                "caption": "Key Bindings",
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/Lensort/Default (Windows).sublime-keymap",
+                                    "user_file": "${packages}/User/Default (Windows).sublime-keymap"
+                                }
                             }
                         ]
                     }
