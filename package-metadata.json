@@ -1,8 +1,0 @@
-{
-    "name": "Lensort",
-    "description": "A plugin for sorting lines by length in Sublime Text, with options to preserve or remove leading whitespace, and to include or ignore whitespace while sorting. This plugin can be run from the menu: `Edit` -> `Sort by Length` or `Sort by Length (Reverse)`, or by using the proposed key bindings `Ctrl+F10` or `Ctrl+Shift+F10`, respectively. *Note:* This plugin reorders the selected text by length only, not alphabetically. Its primary purpose is to enhance the aesthetic layout of the selected text for those who are meticulous about code appearance.",
-    "author": "Johhannas Reyn",
-    "author_email": "JohnReyn.Developer@gmail.com",
-    "version": "1.0.0",
-    "platforms": ["*"]
-}
