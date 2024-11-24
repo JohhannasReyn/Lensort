@@ -21,8 +21,8 @@
 
 ### Manual Installation
 
-1. Install internally via Sublime Text's Tools -> Command Palette -> Package Control: Install Package, then by searching for 'Lensort'.
-2. Download or clone this repository. Copy the `Lensort` folder to your Sublime Text `Packages` directory:
+1. Download or clone this repository.
+2. Copy the `Lensort` folder to your Sublime Text `Packages` directory:
    - On Windows: `C:\Users\<Your Name>\AppData\Roaming\Sublime Text\Packages`
    - On macOS: `~/Library/Application Support/Sublime Text/Packages`
    - On Linux: `~/.config/sublime-text-3/Packages`
