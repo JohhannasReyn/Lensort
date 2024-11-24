@@ -21,8 +21,8 @@
 
 ### Manual Installation
 
-1. Download or clone this repository.
-2. Copy the `Lensort` folder to your Sublime Text `Packages` directory:
+1. Install internally via Sublime Text's Tools -> Command Palette -> Package Control: Install Package, then by searching for 'Lensort'.
+2. Download or clone this repository. Copy the `Lensort` folder to your Sublime Text `Packages` directory:
    - On Windows: `C:\Users\<Your Name>\AppData\Roaming\Sublime Text\Packages`
    - On macOS: `~/Library/Application Support/Sublime Text/Packages`
    - On Linux: `~/.config/sublime-text-3/Packages`
@@ -31,18 +31,26 @@
 
 ## Key Bindings
 
-Lensort doesn't include default key bindings to avoid conflicts with other plugins. However, you can easily set up custom key bindings if you'd like to quickly sort lines by length.
+Lensort doesn't include default key bindings to avoid conflicts with other plugins. However, you can easily set up custom key bindings if you'd like by opening the included keymap files included with this package, and either copy the contents over to your keymap file and removing the comments, or by editing the comments in place and saving the changes to the packaged folder.
 
 ### Suggested Key Bindings
 
-You can use the following key bindings by uncommenting them in the provided keymap files (`Default (Windows).sublime-keymap`, `Default (Linux).sublime-keymap`, `Default (OSX).sublime-keymap`):
-They are in the zipped directory 'Lensort.sublime-package', extract the file for your OS and save it to the `..\Packages\User` directory that is in the `Sublime Text` directory that plugins are installed.
+You can use the suggested key bindings by uncommenting them in the provided keymap file specific to your OS:
+
+`Default (Windows).sublime-keymap`
+`Default (Linux).sublime-keymap`
+`Default (OSX).sublime-keymap`
+
+They are in this zipped directory: 'Lensort.sublime-package', either open the file for your OS
+and save its contents to keymap file found in your `..\Packages\User` directory located in your
+`Sublime Text's` installation directory, or uncomment the section inplace and commit the changes
+directly to the Lensort package.
 
 Just in case you get lost, here's a map:
 
 ../Sublime Text/Installed Packages/Lensort.sublime-package <-- where this plugin is installed, (i.e. you are here)
   |-other stuff
-  |-Packages/User/Default (Your OS).sublime-keymap <-- where the keybinding file gets saved =)
+  |-Packages/User/Default (<Your OS>).sublime-keymap <-- where the keybinding file gets saved =)
   
 ```json
 [
@@ -50,7 +58,7 @@ Just in case you get lost, here's a map:
     // Uncomment to use these bindings by adding an astrick '*' where indicated below.
 
     // Sort lines by length
-    /*/// <-- put a 2nd '*' next to the '*' to uncomment the segment below
+    /* <-- put a 2nd '/' in front of the '/*' to enable the lines below
     { "keys": ["ctrl+f10"], "command": "sort_lines_by_length" },
 
     // Sort lines by length in reverse order
@@ -58,10 +66,11 @@ Just in case you get lost, here's a map:
     //*/
 ]
 ```
-Save the file, and your custom key bindings will be active.
+Save the lines to your keymap file, and your custom key bindings will be active.
 
-If you wish to do so, and have done what is described above, then...<br/>
-**Keyboard Shortcuts** >>>-----^^--^^---^--^^--------^^
+If you have enabled the suggested keybindings, you can invoke this packages functionality with the following 
+
+**Keyboard Shortcuts**
 
 - **Sort Lines by Length:** `Ctrl+F10`
 - **Sort Lines by Length (Reverse):** `Ctrl+Shift+F10`
