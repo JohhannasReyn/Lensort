@@ -1,0 +1,6 @@
+[
+	{ "caption": "-" },
+	{ "caption": "Sort Lines by Length", "command": "sort_lines_by_length" },
+	{ "caption": "Sort Lines by Length  (Reverse)", "command": "sort_lines_by_length", "args": {"reverse": true} },
+	{ "caption": "-" }
+]
