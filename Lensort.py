@@ -12,10 +12,13 @@ class SortLinesByLengthCommand(sublime_plugin.TextCommand):
 
         # Expand each selection to whole lines, leaving a trailing newline that
         # ends the selection outside the region so it is never dropped.
+        # With no text selected, sort the whole document.
+        selections = [region for region in self.view.sel() if not region.empty()]
+        if not selections and self.view.size() > 0:
+            selections = [sublime.Region(0, self.view.size())]
+
         regions = []
-        for region in self.view.sel():
-            if region.empty():
-                continue
+        for region in selections:
             begin = self.view.line(region.begin()).begin()
             end = region.end()
             if end > region.begin() and self.view.substr(end - 1) == "\n":

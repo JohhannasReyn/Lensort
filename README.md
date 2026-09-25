@@ -29,6 +29,10 @@
    
 ## Usage
 
+- Select the lines you want to sort and run `Sort Lines by Length` from the menu, Command Palette or a key binding. Partially selected lines are sorted as whole lines.
+- With multiple selections, each selection is sorted on its own.
+- With nothing selected, the whole document is sorted.
+
 ## Key Bindings
 
 Lensort doesn't include default key bindings to avoid conflicts with other plugins. However, you can easily set up custom key bindings if you'd like by opening the included keymap files included with this package, and either copy the contents over to your keymap file and removing the comments, or by editing the comments in place and saving the changes to the packaged folder.
